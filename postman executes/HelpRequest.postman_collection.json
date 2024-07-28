@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "59c33521-678d-484c-b579-c01172060758",
+		"name": "HelpRequest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30816813"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"_id\":5,\r\n\"locationCode\":\"EIL04\",\r\n\"description\":\"צומת אילת \",\r\n\"preference\":\"Towing\",\r\n\"numOfStuckPeople\":3,\r\n\"phone\":\"+972-55-3334554\",\r\n\"status\":\"COMPLETED\",\r\n\"volunteerId\":\"vol999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/requests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/requests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/requests/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"requests",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"_id\":5,\r\n\"locationCode\":\"EIL04\",\r\n\"description\":\"צומת אילת \",\r\n\"preference\":\"Towing\",\r\n\"numOfStuckPeople\":3,\r\n\"phone\":\"+972-55-3568854\",\r\n\"status\":\"COMPLETED\",\r\n\"volunteerId\":\"vol999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/requests/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"requests",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "a0a0205a-d894-43e9-adf6-11c84afb8e8b",
+		"name": "volunteers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30816813"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"_id\":5,\r\n\"firstName\":\"refael\",\r\n\"lastName\":\"ohaion\",\r\n\"phone\":\"050-6563247\",\r\n\"volunteeringType\":[\"Mechanical\"]}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/volunteers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"volunteers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/volunteers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"volunteers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/volunteers/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"volunteers",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update volunteer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"_id\":5,\r\n\"firstName\":\"rafi\",\r\n\"lastName\":\"ohaion\",\r\n\"phone\":\"050-6563247\",\r\n\"volunteeringType\":[\"Mechanical\"]}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/volunteers/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"volunteers",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
